@@ -1,0 +1,73 @@
+.form{
+    width: 529px;
+    max-width: 100vw;
+    height: 100%;
+    min-height: 541px;
+    max-height: 541px;
+    background-color: #1779db;
+    font-family: 'Lato', sans-serif;
+    padding: 16px 30px;
+    color: #fff;
+}
+
+.input-group{
+    width: 100%;
+    margin-bottom: 29.5px;
+}
+.small{
+    width: 50%;
+}
+.flex{
+    display: flex;
+    align-items:flex-end
+}
+.flex .small:first-child{
+    width: 73%;
+    margin-left: -15px;
+}
+.flex .small:last-child, label[for="country"],label[for="dateOfBirth"]{
+    width: 96% !important;
+    margin-left: 10px;
+}
+.flex .input-group{
+    margin-bottom: 37px;
+}
+input,textarea{
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 12px;
+    width: 100%;
+    height: 43.6px;
+}
+label{
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 200;
+    font-size: 18px;
+}
+label[for="country"],label[for="dateOfBirth"]{
+    font-size: 16px;
+    margin-bottom: 9.5px;
+}
+label[for="studyArea"]{
+    font-size: 17px;
+    /* margin-bottom: 6px; */
+}
+#school{
+    height: 44px;
+}
+#dateOfBirth{
+    padding-left: 37px;
+}
+textarea{
+    height: 160px;
+    padding: 10px;
+    font-size: 17px;
+}
+.icon{
+    position: absolute;
+    padding: 10px 20px;
+    min-width: 40px;
+}

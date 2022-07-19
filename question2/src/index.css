@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.component-comp-container {
+  width: 100vw;
+  max-width: 529px;
+  min-height: 541px;
+  position: relative;
+  height: 541px; /*should be the same height as the images*/
+}
+
+.component-comp-component {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.component-comp-component img,
+.component-comp-component .form {
+  display: block;
+  vertical-align: middle;
+}
+
+.component-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.realImage {
+  filter: brightness(50%);
+  background-image: url(https://lh6.googleusercontent.com/FFtLNi8roajt91lVoH3ZFTcwxunkKVE6UtdzYgisfwkH5g4lR5Y0znT50SYO6YUVjxqNCHn_O2DcQRF11tV_7XuQYOiWzmrXjIonGWln30wfZOpUK7QeRPE9wYMBw28B4U7IuOIMmGjw90HiWHpCFg);
+  width: 529px;
+  height: 541px;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 700px) {
+  .component-comp-overlay,
+  .component-comp-slider {
+    display: none;
+  }
+  .form{
+    max-height: fit-content;
+  }
+}
